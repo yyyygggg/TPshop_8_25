@@ -67,6 +67,6 @@ class TestLogin:
         sleep(2)
         # 向报告里添加截图
         allure.attach("显示密码： ", self.driver.get_screenshot_as_png(), AttachmentType.PNG)
-        assert 1
+        
         assert self.page.login.is_location_exist(password_location)
         
